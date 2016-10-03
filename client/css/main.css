@@ -1,0 +1,57 @@
+/************** Default Styling **************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  border:2px solid black;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 20px, 15px;
+  /*display: inline-block;*/
+  width: 100%;
+  transition:all 0.5s;
+}
+
+.nav ul {
+  list-style: none;
+  border: 1px solid purple;
+  margin: 0;
+  border: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+a:hover {
+  color: black;
+}
+
+.nav {
+  width: 100%;
+  background-color: gray;
+  align-content: center;
+
+}
+
+.body {
+  flex: 1;
+  background-color: yellow;
+}

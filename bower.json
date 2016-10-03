@@ -1,0 +1,22 @@
+{
+  "name": "vintage-american-football-client",
+  "homepage": "https://github.com/SimonHerrera/vintage-american-football-client",
+  "authors": [
+    "Simon Herrera <simonherrera.tech@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
