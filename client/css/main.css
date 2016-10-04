@@ -7,51 +7,82 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;
-  color: #000;
+  background: gray;
 }
 
-.container {
-  display: flex;
-  border:2px solid black;
-  height: 100vh;
-  flex-wrap: wrap;
-}
 
-a {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 2px;
-  padding: 20px, 15px;
-  /*display: inline-block;*/
-  width: 100%;
-  transition:all 0.5s;
-}
-
-.nav ul {
-  list-style: none;
-  border: 1px solid purple;
-  margin: 0;
-  border: 0;
-}
-
-.nav li {
-  display: inline;
-}
-
+/* Nav Styling Extras */
 a:hover {
   color: black;
 }
 
-.nav {
-  width: 100%;
-  background-color: gray;
-  align-content: center;
-
+li {
+  display: inline;
+  padding-right: 20px;
 }
 
-.body {
-  flex: 1;
-  background-color: yellow;
+ul {
+  /*font-family: 'Permanent Marker', cursive;*/
+  /*font-family: 'Rye', cursive;*/
+  list-style-type: none;
+  text-align: center;
 }
+
+  a {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.0rem;
+    color: red;
+    letter-spacing: 2px;
+    transition:all 0.5s;
+  }
+
+  li {
+    padding-right: 10px;
+  }
+
+
+@media only screen and (min-width: 835px) {
+  a {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.0rem;
+    color: white;
+    letter-spacing: 2px;
+    transition:all 0.5s;
+  }
+
+  li {
+    padding-right: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 1145px) {
+  a {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 2px;
+    transition:all 0.5s;
+  }
+
+  li {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1525px) {
+  a {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 2px;
+    transition:all 0.5s;
+  }
+
+  li {
+    padding-right: 40px;
+  }
+}
+

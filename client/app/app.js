@@ -10,11 +10,13 @@ angular.module('vafApp', ['ngRoute'])
   });
 
 
-var htmlLinks = document.getElementById('main-header');
+var htmlLinks = document.getElementById('nav-links');
 htmlLinks.innerHTML =
   "<nav><ul><li><a href='/#/'>Home</a></li>" +
-  "<li><a href='vintage-games.html'>Vintage Games</a></li>" +
-  "<li><a href='organization.html'>Orgainization</a></li>" +
-  "<li><a href='/#/players'>players</a></li>" +
-  "<li><a href='vintage-mechandise.html'>Merchandise</a></li>" +
-  "<li><a href='about.html'>Mission</a></li></ul></nav>";
+  "<li><a href='/#/teams'>Teams</a></li>" +
+  "<li><a href='/#/players'>Players</a></li>" +
+  "<li><a href='/#/schedule'>Schedule</a></li>" +
+  "<li><a href='/#/organization'>Orgainization</a></li>" +
+  "<li><a href='/#/merchandise'>Merchandise</a></li>" +
+  "<li><a href='/#/play-vintage'>Play Vintage</a></li>" +
+  "<li><a href='/#/about'>About</a></li></ul></nav>";
