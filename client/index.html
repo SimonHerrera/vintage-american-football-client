@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vintage American Football</title>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rye|Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
-  <body ng-app="vafApp" class="flex-container">
-      <header class="nav-content" id="nav-links"></header>
+  <body ng-app="vafApp">
+
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle" class="menu-icon">&#9776;</label>
+
+      <header>
+        <div id="vaf-logo">Vintage American Football</div>
+      </header>
+      <nav id="nav-links"></nav>
 
 
       <article ng-view class="main-content">
