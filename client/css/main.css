@@ -118,6 +118,17 @@ nav a:hover {
 }
 
 
+/* Nav Toggle */
+#navToggle {
+  display: visible;
+}
+
+#navToggle:checked ~ .menu {
+  position: absolute;
+  top: -71px;
+}
+
+
 /* Page Views */
 .html-wrap {
   position: absolute;
