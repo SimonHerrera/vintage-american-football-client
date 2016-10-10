@@ -136,18 +136,17 @@ nav a:hover {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 975px) {
+/*@media only screen and (max-width: 975px) {
   nav li { display: block; padding: 0; }
   nav a { display: block; padding: 0; border-bottom: 1px solid black}
   nav a:hover { border-radius: 0; }
   .menu {top: -445px; height: auto;}
 
   #vaf-logo { font-size: 1rem }
-
-}
+}*/
 
 /* Media Queries */
-/*@media only screen and (min-width: 885px) {
+@media only screen and (min-width: 885px) {
   a {
     font-family: 'Special Elite', cursive;
     font-size: 1.1rem;
@@ -190,4 +189,3 @@ nav a:hover {
   }
 }
 
-*/
