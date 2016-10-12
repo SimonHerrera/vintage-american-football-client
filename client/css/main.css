@@ -31,14 +31,14 @@ ul {
 /*Nav New*/
 header {
   width: 100%;
-  height: 55px;
+  height: 85px;
   padding-left: 60px;
   margin: auto;
   border-bottom: 1px solid black;
   background: white;
 }
 
-#vaf-logo {
+/*#vaf-logo {
 font-family: 'Special Elite', cursive;
   float: left;
   line-height: 55px;
@@ -46,7 +46,7 @@ font-family: 'Special Elite', cursive;
   font-size: 30px;
   font-weight: bolder;
 }
-
+*/
 
 /* Nav and Nav Bar */
 nav {
@@ -63,7 +63,7 @@ nav li {
   padding-right: 10px;
 }
 
-nav a {
+/*nav a {
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
     color: white;
@@ -71,7 +71,7 @@ nav a {
     transition:all 0.5s;
   padding-right: 10px;
 }
-
+*/
 nav a:hover {
   color: black;
   background: white;
@@ -85,15 +85,15 @@ nav a:hover {
   height: 70px;
   background: gray;
   position: absolute;
-  top: -71px;
+/*  top: -71px;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
-  z-index: -1;
+  z-index: -1;*/
 }
-
+/*
 .menu-icon {
   float: right;
   padding: 10px 20px;
@@ -102,13 +102,13 @@ nav a:hover {
   cursor: pointer;
   border-radius: 5px;
   margin: 5px 5px 0 0 ;
-}
+}*/
 
-.menu-icon:hover {
+/*.menu-icon:hover {
   background: lightgray;
-}
+}*/
 
-#menuToggle {
+/*#menuToggle {
   display: none;
 }
 
@@ -116,17 +116,17 @@ nav a:hover {
   position: absolute;
   top: 55px;
 }
-
+*/
 
 /* Nav Toggle */
-#navToggle {
+/*#navToggle {
   display: visible;
 }
 
 #navToggle:checked ~ .menu {
   position: absolute;
   top: -71px;
-}
+}*/
 
 
 /* Page Views */
