@@ -38,19 +38,24 @@ header {
   background: white;
 }
 
-/*#vaf-logo {
-font-family: 'Special Elite', cursive;
-  float: left;
-  line-height: 55px;
-  color: black;
-  font-size: 30px;
-  font-weight: bolder;
+nav a {
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 1.8px;
+    transition:all 0.5s;
+  }
+
+nav li {
+  display: inline-block;
+  padding-right: 5px;
 }
-*/
+
 
 /* Nav and Nav Bar */
 nav {
   width: 100%;
+  min-width: 700px;
   text-align: center;
 }
 
@@ -58,10 +63,6 @@ nav ul {
   line-height: 70px;
 }
 
-nav li {
-  display: inline-block;
-  padding-right: 10px;
-}
 
 /*nav a {
     font-family: 'Special Elite', cursive;
@@ -135,34 +136,25 @@ nav a:hover {
   margin-top: 126.11px;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 975px) {
-  nav li { display: block; padding: 0; }
-  nav a { display: block; padding: 0; border-bottom: 1px solid black}
-  nav a:hover { border-radius: 0; }
-  .menu {top: -445px; height: auto;}
-
-  #vaf-logo { font-size: 1rem }
-}
 
 /* Media Queries */
-@media only screen and (min-width: 885px) {
-  a {
+@media only screen and (min-width: 750px) {
+nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: white;
     letter-spacing: 1.8px;
     transition:all 0.5s;
   }
 
-  li {
+nav li {
     padding-right: 10px;
   }
 }
 
 
-@media only screen and (min-width: 1145px) {
-  a {
+@media only screen and (min-width: 950px) {
+nav a {
     font-family: 'Special Elite', cursive;
     font-size: 1.4rem;
     color: white;
@@ -170,21 +162,21 @@ nav a:hover {
     transition:all 0.5s;
   }
 
-  li {
+nav li {
     padding-right: 20px;
   }
 }
 
-@media only screen and (min-width: 1525px) {
-  a {
+@media only screen and (min-width: 1150px) {
+nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.8rem;
-    color: white;
+    font-size: 1.6rem;
+    color: red;
     letter-spacing: 2px;
     transition:all 0.5s;
   }
 
-  li {
+nav li {
     padding-right: 40px;
   }
 }
