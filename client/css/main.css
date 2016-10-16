@@ -120,9 +120,9 @@ nav a:hover {
 @media only screen and (min-width: 750px) {
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.5px;
     transition:all 0.5s;
   }
 
@@ -135,9 +135,9 @@ nav li {
 @media only screen and (min-width: 950px) {
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 1.7px;
     transition:all 0.5s;
   }
 
@@ -149,9 +149,9 @@ nav li {
 @media only screen and (min-width: 1150px) {
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: red;
-    letter-spacing: 2px;
+    letter-spacing: 1.7px;
     transition:all 0.5s;
   }
 
