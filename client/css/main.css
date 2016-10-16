@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Special Elite', cursive;
   background: white;
 }
 
@@ -150,7 +150,7 @@ nav li {
 nav a {
     font-family: 'Special Elite', cursive;
     font-size: 1.4rem;
-    color: red;
+    color: white;
     letter-spacing: 1.7px;
     transition:all 0.5s;
   }
