@@ -69,13 +69,6 @@ nav a:hover {
 }
 
 
-/* Page Views */
-/*.html-wrap {
-  position: absolute;
-  margin-top: 126.11px;
-}*/
-
-
 /* Media Queries */
 @media only screen and (max-width: 750px) {
 
@@ -92,9 +85,6 @@ nav li {
     display: block;
   }
 
-/*nav li:hover {
-  background: lightgray;
-  }*/
 
 nav ul {
   line-height: 35px;
