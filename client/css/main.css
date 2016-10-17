@@ -28,7 +28,8 @@ header {
 
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1rem;
+    font-size: 1rem !important;
+    /*font-size: 1rem;*/
     color: white;
     letter-spacing: 1.8px;
     padding: 5px;
