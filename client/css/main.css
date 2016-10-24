@@ -7,7 +7,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  /*font-size: 1rem;*/
+  font-size: 1.6rem;
   font-family: 'Special Elite', cursive;
   background: white;
 }
@@ -28,8 +29,8 @@ header {
 
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1rem !important;
-    /*font-size: 1rem;*/
+    /*font-size: 1rem !important;*/
+    font-size: 1.6rem;
     color: white;
     letter-spacing: 1.8px;
     padding: 5px;
@@ -75,7 +76,7 @@ nav a:hover {
 
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: black;
     letter-spacing: 1.8px;
     transition:all 0.5s;
@@ -111,7 +112,7 @@ nav a:hover {
 @media only screen and (min-width: 750px) {
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     color: white;
     letter-spacing: 1.5px;
     transition:all 0.5s;
@@ -126,7 +127,7 @@ nav li {
 @media only screen and (min-width: 950px) {
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     color: white;
     letter-spacing: 1.7px;
     transition:all 0.5s;
@@ -140,7 +141,7 @@ nav li {
 @media only screen and (min-width: 1150px) {
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.4rem;
+    font-size: 2rem !important;
     color: white;
     letter-spacing: 1.7px;
     transition:all 0.5s;
