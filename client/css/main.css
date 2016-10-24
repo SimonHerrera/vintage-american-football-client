@@ -29,12 +29,13 @@ header {
 
 nav a {
     font-family: 'Special Elite', cursive;
-    /*font-size: 1rem !important;*/
+    /*font-size: 1rem;*/ /* use this line if remove bootstrap*/
     font-size: 1.6rem; /*compensate for bootstrap*/
     color: white;
     letter-spacing: 1.8px;
     padding: 5px;
     transition:all 0.5s;
+    text-decoration: underline;  /*compensate for bootstrap*/
   }
 
 nav li {
