@@ -55,13 +55,15 @@ nav ul {
   line-height: 70px;
 }
 
+nav a:visited {
+  color: white;
+}
 
 nav a:hover {
   color: black;
   background: white;
   border-radius: 5px;
 }
-
 
 /* Menu Show and Hide */
 .menu {
@@ -81,8 +83,11 @@ nav a {
     color: black;
     letter-spacing: 1.8px;
     transition:all 0.5s;
-
   }
+
+nav a:visited {
+  color: black;
+}
 
 nav li {
     display: block;
