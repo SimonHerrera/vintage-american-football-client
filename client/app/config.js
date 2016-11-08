@@ -12,6 +12,9 @@ angular.module('vafApp')
         controller: 'PlayersCtrl',
         controllerAs: 'players',
         templateUrl: 'app/players/players.html'
-    })
+      })
+      .when('/merchandise', {
+        templateUrl: 'app/merchandise/merchandise.html'
+      })
       .otherwise('/')
   }]);
