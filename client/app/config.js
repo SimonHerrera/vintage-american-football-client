@@ -16,5 +16,8 @@ angular.module('vafApp')
       .when('/merchandise', {
         templateUrl: 'app/merchandise/merchandise.html'
       })
+      .when('/organization', {
+        templateUrl: 'app/organization/organization.html'
+      })
       .otherwise('/')
   }]);
