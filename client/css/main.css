@@ -47,8 +47,8 @@ header {
 
 nav a {
   font-family: 'Special Elite', cursive;
-  /*font-size: 1rem;*/ /* use this line if remove bootstrap*/
-  font-size: 1.2rem; /*compensate for bootstrap*/
+  /*font-size: 1rem;*/  use this line if remove bootstrap
+  font-size: 1.3rem; /*compensate for bootstrap*/
   color: white;
   letter-spacing: 1.6px;
   padding: 5px;
@@ -176,7 +176,7 @@ nav li {
   }
 
 .img-player {
-  width: 100%;
+  width: 50%;
   padding: 7px;
   border-radius: 10px;
 }
