@@ -13,6 +13,11 @@ angular.module('vafApp')
         controllerAs: 'players',
         templateUrl: 'app/players/players.html'
       })
+      .when('/teams', {
+        controller: 'TeamsCtrl',
+        controllerAs: 'teams',
+        templateUrl: 'app/teams/teams.html'
+      })
       .when('/merchandise', {
         templateUrl: 'app/merchandise/merchandise.html'
       })

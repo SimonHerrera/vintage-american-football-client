@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('vafApp')
-  .controller('PlayersCtrl', function(apiUrl, $http, $anchorScroll) {
+  .controller('PlayersCtrl', function(apiUrl, $http, $routeParams, $anchorScroll) {
 
     const players = this
     players.welcome = 'Welcome Vintage Players'
@@ -10,7 +10,7 @@ angular.module('vafApp')
 
     $http.get (apiUrl+'/players/').then(res => {
       console.log("res", res);
-      players.riiPlayers = res.data
+      players.vafPlayers = res.data
     })
 
     players.selectPlayer = player => {

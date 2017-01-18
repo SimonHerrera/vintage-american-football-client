@@ -11,7 +11,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="player in players.riiPlayers | orderBy: 'lastName' | filter: userSearch">
+            <tr ng-repeat="player in players.vafPlayers | orderBy: 'lastName' | filter: userSearch">
               <td><a href ="" ng-click="players.selectPlayer(player)">{{ player.firstName }}  {{ player.lastName }}</a></td>
             </tr>
           </tbody>
@@ -25,7 +25,8 @@
       <section class="row">
         <div class="col-md-7"><h2>Player Bio</h2>
           <h4>Name:</h4>
-          <h4> {{ players.player.firstName }} {{ players.player.lastName }}
+          <h4> {{ players.player.firstName }} {{ players.player.lastName }} <!-- {{players.team.cityName}} -->
+          <!-- want to pull in via relationship the team of this_player without it pulling in all teams and searching - is this possible yearView.game.locationId.city -->
           </h4>
           <p>Email: {{ players.player.email }}</p>
           <p>Phone: {{ players.player.phone }}</p>
