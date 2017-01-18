@@ -14,13 +14,19 @@ body {
   min-width: 350px;
 }
 
-img {
+.img-scale {
   width: 100%;
   padding: 7px;
   border-radius: 10px;
 }
 
-.jersey-img {
+.img-player {
+  width: 50%;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.img-jersey {
   width: 30%;
   padding: 7px;
   border-radius: 10px;
@@ -40,15 +46,15 @@ header {
 }
 
 nav a {
-    font-family: 'Special Elite', cursive;
-    /*font-size: 1rem;*/ /* use this line if remove bootstrap*/
-    font-size: 1.6rem; /*compensate for bootstrap*/
-    color: white;
-    letter-spacing: 1.8px;
-    padding: 5px;
-    transition:all 0.5s;
-    text-decoration: underline;  /*compensate for bootstrap*/
-  }
+  font-family: 'Special Elite', cursive;
+  /*font-size: 1rem;*/ /* use this line if remove bootstrap*/
+  font-size: 1.2rem; /*compensate for bootstrap*/
+  color: white;
+  letter-spacing: 1.6px;
+  padding: 5px;
+  transition:all 0.5s;
+  text-decoration: underline;  /*compensate for bootstrap*/
+}
 
 nav li {
   display: inline-block;
@@ -87,24 +93,24 @@ nav a:hover {
 
 
 /* Media Queries */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 580px) {
 
 nav a {
-    font-family: 'Special Elite', cursive;
-    font-size: 1.3rem; /*compensate for bootstrap*/
-    font-weight: 700;
-    color: black;
-    letter-spacing: 1.8px;
-    transition:all 0.5s;
-  }
+  font-family: 'Special Elite', cursive;
+  font-size: 1.3rem; /*compensate for bootstrap*/
+  font-weight: 700;
+  color: black;
+  letter-spacing: 1.8px;
+  transition:all 0.5s;
+}
 
 nav a:visited {
   color: black;
 }
 
 nav li {
-    display: block;
-  }
+  display: block;
+}
 
 
 nav ul {
@@ -125,28 +131,41 @@ nav a:hover {
   background: black;
 }
 
+.img-player {
+  width: 50%;
+  padding: 7px;
+  border-radius: 10px;
+}
+
 }
 
 
 @media only screen and (min-width: 755px) {
 nav a {
-    font-family: 'Special Elite', cursive;
-    font-size: 1.7rem; /*compensate for bootstrap*/
-    color: white;
-    letter-spacing: 1.5px;
-    transition:all 0.5s;
-  }
+  font-family: 'Special Elite', cursive;
+  font-size: 1.7rem;
+  color: white;
+  letter-spacing: 1.5px;
+  transition:all 0.5s;
+}
 
 nav li {
-    padding-right: 10px;
-  }
+  padding-right: 10px;
+}
+
+.img-player {
+  width: 50%;
+  padding: 7px;
+  border-radius: 10px;
+}
+
 }
 
 
 @media only screen and (min-width: 950px) {
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 1.9rem; /*compensate for bootstrap*/
+    font-size: 1.9rem;
     color: white;
     letter-spacing: 1.7px;
     transition:all 0.5s;
@@ -155,6 +174,13 @@ nav a {
 nav li {
     padding-right: 20px;
   }
+
+.img-player {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+}
+
 }
 
 @media only screen and (min-width: 1150px) {
@@ -169,5 +195,12 @@ nav a {
 nav li {
     padding-right: 40px;
   }
+
+.img-player {
+  width: 50%;
+  padding: 7px;
+  border-radius: 10px;
+}
+
 }
 
