@@ -23,16 +23,19 @@
     <!-- Player Bio Section -->
     <div ng-show="teams.individualTeamView" class="col-lg-8 col-md-8 col-sm-8">
       <section class="row">
-        <div class="col-md-7"><h2>Team Bio</h2>
-          <h4>Name:</h4>
+        <div class="col-md-7"><h3>Team</h3>
           <h4> {{ teams.team.cityName }}  {{ teams.team.teamName }} {{ teams.team.year }}
           </h4>
+          <img ng-src="{{ teams.team.image }}" class="img-player" alt="Team image">
+          <div ng-show="teams.managerView">
+          <p>Manager {{ teams.manager.lastName }}</p>
+          </div>
           <p>Primary Color: {{ teams.team.primaryColor }}</p>
           <p>Secondary Color: {{ teams.team.secondaryColor }}</p>
-          <p>Manager {{ teams.team.manager.lastName }}</p>
         </div>
         <div class="col-md-5">
-          <img ng-src="{{ teams.team.image }}" class="img-player" alt="Team image">
+          <h3>Roster</h3>
+          <p>Player {{ teams.team.player }}</p>
         </div>
 <!--         <div ng-show="teams.individualPlayerView" class="row">
           <div class="col-sm-12">
