@@ -7,14 +7,15 @@ angular.module('vafApp')
     teams.welcome = 'Welcome Vintage Teams'
     teams.intialView = true;
     teams.individualTeamView = false
+    // part of view but do I need seperate managerView here because it's part of the teamView?
     teams.managerView = false
 
     $http.get (apiUrl+'/teams/').then(res => {
       console.log("res", res);
-      teams.vafTeams = res.data
+      teams.allTeams = res.data
     })
 
-    //Select Year and get games and specific game - get players for that year
+    //Select Team and get manager from that team
     // $http.get (`${apiUrl}/teams/${$routeParams.selectedTeam}/`)
     // .then(res => {
     //   console.log("res2", res);

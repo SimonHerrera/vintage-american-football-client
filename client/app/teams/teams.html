@@ -11,7 +11,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="team in teams.vafTeams | orderBy: 'cityName' | filter: userSearch">
+            <tr ng-repeat="team in teams.allTeams | orderBy: 'cityName' | filter: userSearch">
               <td><a href ="" ng-click="teams.selectTeam(team)">{{ team.cityName }}  {{ team.teamName }} {{ team.year }}</a></td>
             </tr>
           </tbody>
