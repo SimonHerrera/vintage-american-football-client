@@ -27,9 +27,8 @@
           <h4> {{ teams.team.cityName }}  {{ teams.team.teamName }} {{ teams.team.year }}
           </h4>
           <img ng-src="{{ teams.team.image }}" class="img-player" alt="Team image">
-          <div ng-show="teams.managerView">
-          <p>Manager {{ teams.manager.lastName }}</p>
-          </div>
+          <!-- <div ng-show="teams.managerView"> -->
+          <p>Manager {{ manager.managers.lastName }}</p>
           <p>Primary Color: {{ teams.team.primaryColor }}</p>
           <p>Secondary Color: {{ teams.team.secondaryColor }}</p>
         </div>
