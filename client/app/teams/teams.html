@@ -12,7 +12,7 @@
           </thead>
           <tbody>
             <tr ng-repeat="team in teams.allTeams | orderBy: 'cityName' | filter: userSearch">
-              <td><a href ="" ng-click="teams.selectTeam(team)">{{ team.cityName }}  {{ team.teamName }} {{ team.year }}</a></td>
+              <td><a href ="" ng-click="teams.selectTeam(team)">{{ team.cityName }}  {{ team.teamName }} {{ team.year }} </a></td>
             </tr>
           </tbody>
         </table>
@@ -28,7 +28,7 @@
           </h4>
           <img ng-src="{{ teams.team.image }}" class="img-player" alt="Team image">
           <!-- <div ng-show="teams.managerView"> -->
-          <p>Manager {{ manager.managers.lastName }}</p>
+          <p>Manager {{ teams.team.managerId }}</p>
           <p>Primary Color: {{ teams.team.primaryColor }}</p>
           <p>Secondary Color: {{ teams.team.secondaryColor }}</p>
         </div>

@@ -7,12 +7,12 @@
         <table>
           <thead>
             <tr>
-              <th>Schedule Name</th>
+              <th>Games</th>
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="schedule in schedules.vafSchedules | orderBy: 'lastName' | filter: userSearch">
-              <td><a href ="" ng-click="schedules.selectPlayer(schedule)">{{ schedule.firstName }}  {{ schedule.lastName }}</a></td>
+            <tr ng-repeat="schedule in schedules.vafSchedules | orderBy: 'date' | filter: userSearch">
+              <td><a href ="" ng-click="schedules.selectSchedule(schedule)">{{ schedule.visitorTeam }} vs {{ schedule.homeTeam }}</a></td>
             </tr>
           </tbody>
         </table>
@@ -23,16 +23,18 @@
     <!-- Schedule Bio Section -->
     <div ng-show="schedules.individualScheduleView" class="col-lg-8 col-md-8 col-sm-8">
       <section class="row">
-        <div class="col-md-7"><h2>Schedule Bio</h2>
-          <h4>Name:</h4>
-          <h4> {{ schedules.schedule.firstName }} {{ schedules.schedule.lastName }} <!-- {{schedules.team.cityName}} -->
+        <div class="col-md-7"><h3>Result</h3>
+          <h4>Date:</h4>
+          <h4> {{ schedules.schedule.date }}
+           <!-- {{schedules.team.cityName}} -->
           <!-- want to pull in via relationship the team of this_player without it pulling in all teams and searching - is this possible yearView.game.locationId.city -->
           </h4>
-          <p>Email: {{ schedules.schedule.email }}</p>
-          <p>Phone: {{ schedules.schedule.phone }}</p>
+          <h4>{{ schedules.schedule.visitorTeam }} - {{ schedules.schedule.visitorScore }} - {{ schedules.schedule.homeTeam }} - {{ schedules.schedule.homeScore }}</h4></h4>
+    <!--       <p>Email: {{ schedules.schedule.visitorTeam }}</p>
+          <p>Phone: {{ schedules.schedule.homeTeam }}</p> -->
         </div>
         <div class="col-md-5">
-          <img ng-src="{{ schedules.schedule.image1 }}" class="img-schedule" alt="Schedule image">
+          <img class="img-scale" ng-src="{{ schedules.schedule.image1 }}" class="img-schedule" alt="Schedule image">
         </div>
 <!--         <div ng-show="schedules.individualScheduleView" class="row">
           <div class="col-sm-12">
