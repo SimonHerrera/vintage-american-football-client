@@ -19,10 +19,10 @@ angular.module('vafApp')
     })
 
     // Select Team and get manager from that team
-    $http.get (`${apiUrl}/teams/${$routeParams.selectedTeam}/`)
-    .then(res => {
-      console.log("res2", res);
-    })
+    // $http.get (`${apiUrl}/teams/${$routeParams.selectedTeam}/`)
+    // .then(res => {
+    //   console.log("res2", res);
+    // })
     //   teams.team = res.data;
     // }).then(() =>
     //   $http.get (apiUrl+'/managers/').then(res => {
