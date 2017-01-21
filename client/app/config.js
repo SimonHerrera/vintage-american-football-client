@@ -18,14 +18,16 @@ angular.module('vafApp')
         controllerAs: 'teams',
         templateUrl: 'app/teams/teams.html'
       })
+      .when('/schedules', {
+        controller: 'SchedulesCtrl',
+        controllerAs: 'schedules',
+        templateUrl: 'app/schedules/schedules.html'
+      })
       .when('/merchandise', {
         templateUrl: 'app/merchandise/merchandise.html'
       })
       .when('/organization', {
         templateUrl: 'app/organization/organization.html'
-      })
-      .when('/schedules', {
-        templateUrl: 'app/schedules/schedules.html'
       })
       .when('/about', {
         templateUrl: 'app/about/about.html'
