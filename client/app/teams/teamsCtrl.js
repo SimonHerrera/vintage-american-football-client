@@ -17,17 +17,19 @@ angular.module('vafApp')
       teams.allTeams = res.data
     })
 
+
     // Select Team and get manager from that team
     // $http.get (`${apiUrl}/teams/${$routeParams.selectedTeam}/`)
     // .then(res => {
-    //   console.log("res2", res);
     //   teams.team = res.data;
+    //   console.log("res2", res);
     // }).then(() =>
     //   $http.get (apiUrl+'/managers/').then(res => {
     //     team.allManagers = res.data
     //   })
     // )
 
+    //when selected run and do this
     teams.selectTeam = team => {
       teams.intialView = false;
       teams.individualTeamView = true;

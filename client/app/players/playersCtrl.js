@@ -13,6 +13,7 @@ angular.module('vafApp')
       players.vafPlayers = res.data
     })
 
+    //when run do this
     players.selectPlayer = player => {
       players.intialView = false;
       players.individualPlayerView = true;
