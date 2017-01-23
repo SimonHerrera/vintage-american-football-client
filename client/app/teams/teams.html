@@ -29,12 +29,13 @@
           <img ng-src="{{ teams.team.image }}" class="img-player" alt="Team image">
           <!-- <div ng-show="teams.managerView"> -->
           <p>Manager {{ teams.team.managerId }}</p>
+    <!--       <p>Manager {{ teams.team.objects.filter(manager__firstName) }}</p> -->
           <p>Primary Color: {{ teams.team.primaryColor }}</p>
           <p>Secondary Color: {{ teams.team.secondaryColor }}</p>
         </div>
         <div class="col-md-5">
           <h3>Roster</h3>
-          <p>Player {{ teams.team.player }}</p>
+          <p>Player {{ teams.team.playerId }}</p>
         </div>
 <!--         <div ng-show="teams.individualPlayerView" class="row">
           <div class="col-sm-12">
