@@ -23,38 +23,47 @@
     <!-- Player Bio Section -->
     <div ng-show="teams.individualTeamView" class="col-lg-8 col-md-8 col-sm-8">
       <section class="row">
-        <div class="col-md-7"><h3>Team</h3>
+        <div class="col-md-7"><!-- <h3>Team</h3> -->
           <h4> {{ teams.team.cityName }}  {{ teams.team.teamName }} {{ teams.team.year }}
           </h4>
-          <img ng-src="{{ teams.team.image }}" class="img-player" alt="Team image">
+          <img ng-src="{{ teams.team.image }}" class="img-team" alt="Team image">
           <!-- <div ng-show="teams.managerView"> -->
-          <p class="no-margin-bot">Manager: {{ teams.team.managerId.firstName }} {{ teams.team.managerId.lastName }}</p>
-          <p class="no-margin-bot">Primary Color: {{ teams.team.primaryColor }}</p>
-          <p class="no-margin-bot">Secondary Color: {{ teams.team.secondaryColor }}</p>
-        </div>
-        <div class="col-md-5">
-          <h3>Roster</h3>
-          <p>Player {{ teams.team.playerId }}</p>
-          <!-- <p>Player {{ teams.team.playerId.firstName }}</p> -->
-<!--           <table>
+          <table>
             <thead>
               <tr>
-                <th>Team Name</th>
+                <th>Team</th>
               </tr>
             </thead>
             <tbody>
-              <tr ng-repeat="player in teams.allTeams | orderBy: 'lastName' | filter: userSearch">
-                <td><a href ="" ng-click="teams.selectTeam(player)">{{teams.team.playerId.firstName}} </a></td>
+              <tr>
+                <td>Manager: {{ teams.team.managerId.firstName }} {{ teams.team.managerId.lastName }}</td>
+              </tr>
+              <tr>
+                <td>Primary Color: {{ teams.team.primaryColor }}</td>
+              </tr>
+              <tr>
+                <td>Secondary Color: {{ teams.team.secondaryColor }}</td>
               </tr>
             </tbody>
-          </table> -->
+          </table>
         </div>
-<!--         <div ng-show="teams.individualPlayerView" class="row">
-          <div class="col-sm-12">
-            <p>Email: {{ teams.team.email }}</p>
-            <p>Phone: {{ teams.team.phone }}</p>
-          </div>
-        </div> -->
+        <div class="col-md-5">
+<!--           <h3>Roster</h3>
+          <p class="no-margin-bot">{{ teams.team.playerId[0].firstName }} {{ teams.team.playerId[0].lastName }}</p>
+          <p class="no-margin-bot">{{ teams.team.playerId[1].firstName }} {{ teams.team.playerId[1].lastName }}</p> -->
+          <table>
+            <thead>
+              <tr>
+                <th>Roster</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="player in teams.team.playerId | orderBy: 'lastName' | filter: userSearch">
+                <td><!-- <a href ="" ng-click="players.selectPlayer(player)"> -->{{player.firstName}} {{player.lastName}} </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
   </section>
