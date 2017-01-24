@@ -28,8 +28,7 @@
           </h4>
           <img ng-src="{{ teams.team.image }}" class="img-player" alt="Team image">
           <!-- <div ng-show="teams.managerView"> -->
-          <p>Manager {{ teams.team.managerId }}</p>
-    <!--       <p>Manager {{ teams.team.objects.filter(manager__firstName) }}</p> -->
+          <p>Manager: {{ teams.team.managerId.firstName }} {{ teams.team.managerId.lastName }}</p>
           <p>Primary Color: {{ teams.team.primaryColor }}</p>
           <p>Secondary Color: {{ teams.team.secondaryColor }}</p>
         </div>
