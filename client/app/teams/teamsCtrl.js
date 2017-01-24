@@ -23,16 +23,14 @@ angular.module('vafApp')
     // .then(res => {
     //   teams.team = res.data;
     //   console.log("res2", res);
-    // }).then(() =>
-    //   $http.get (apiUrl+'/managers/').then(res => {
-    //     team.allManagers = res.data
-    //   })
-    // )
+    // })
+
 
     //when selected run and do this
     teams.selectTeam = team => {
       teams.intialView = false;
       teams.individualTeamView = true;
       teams.team = team;
+      // teams.team.player = player;
     }
   });
