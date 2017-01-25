@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <section class=row>
-    <h2 class="col-xs-12">{{ teams.welcome }}</h2>
+    <h2 class="col-xs-12 text-center">{{ teams.welcome }}</h2>
   <div class="col-lg-4 col-md-4 col-sm-4"> <!-- ng-show? -->
     <div>
         <!-- <table class="table table-striped table-hover table-condensed"> -->
@@ -11,13 +11,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="team in teams.allTeams | orderBy: 'cityName' | filter: userSearch">
+            <tr ng-repeat="team in teams.allTeams | orderBy: ['year', 'cityName'] | filter: userSearch">
               <td><a href ="" ng-click="teams.selectTeam(team)">{{ team.cityName }}  {{ team.teamName }} {{ team.year }} </a></td>
             </tr>
           </tbody>
         </table>
     </div>
   </div>
+  <!-- why is this not working when initialFiller is added -->
+<!--   <div ng-show="teams.initialView" class="col-lg-8 col-md-8 col-sm-8"><img src="images/Times_Photo_B&W.png" class="img-scale" alt="Photo of 2016 Game - QC Times 8-29-2016">
+  </div> -->
 
 
     <!-- Player Bio Section -->

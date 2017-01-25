@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <section class=row>
-    <h2 class="col-xs-12">{{ schedules.welcome }}</h2>
+    <h2 class="col-xs-12 text-center">{{ schedules.welcome }}</h2>
   <!-- <div class="col-lg-4 col-md-4 col-sm-4"> ng-show? -->
   <div class="col-lg-5 col-md-5 col-sm-5">
     <div>
@@ -34,7 +34,7 @@
           </h4>
           <h5>Location: {{ schedules.schedule.location.city }}, {{ schedules.schedule.location.state }} - {{ schedules.schedule.location.venueName }}</h5>
 
-          <table class="table table-bordered">
+          <table class="table table-bordered table-size">
               <thead>
                 <tr>
                   <th></th>
@@ -71,7 +71,7 @@
           <p>Phone: {{ schedules.schedule.homeTeam }}</p> -->
         </div>
         <div class="col-md-5">
-          <img class="img-scale" ng-src="{{ schedules.schedule.image1 }}" class="img-schedule" alt="Schedule image">
+          <img class="img-schedule" ng-src="{{ schedules.schedule.image1 }}" class="img-schedule" alt="Schedule image">
           <p>{{ schedules.schedule.image1Info }}</p>
         </div>
 <!--         <div ng-show="schedules.individualScheduleView" class="row">

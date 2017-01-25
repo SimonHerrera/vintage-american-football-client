@@ -3,8 +3,10 @@
 angular.module('vafApp')
   .controller('PlayersCtrl', function(apiUrl, $http, $routeParams, $anchorScroll) {
 
+    $anchorScroll.yOffset=500
+
     const players = this
-    players.welcome = 'Welcome Vintage Players'
+    players.welcome = 'Vintage Football Players'
     players.intialView = true;
     players.individualPlayerView = false
 
@@ -18,5 +20,6 @@ angular.module('vafApp')
       players.intialView = false;
       players.individualPlayerView = true;
       players.player = player
+      $anchorScroll('scroll-bottom')
     }
   });

@@ -14,8 +14,19 @@ body {
   min-width: 350px;
 }
 
+.text-center {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
 .img-scale {
   width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.img-schedule {
+  width: 90%;
   padding: 7px;
   border-radius: 10px;
 }
@@ -141,10 +152,15 @@ nav a:hover {
 }
 
 .img-player {
-  width: 50%;
+  width: 65%;
   padding: 7px;
   border-radius: 10px;
 }
+
+.table-size {
+  width: 95%;
+}
+
 
 }
 
@@ -168,10 +184,15 @@ nav li {
   border-radius: 10px;
 }
 
+.table-size {
+  width: 95%;
 }
 
 
-@media only screen and (min-width: 950px) {
+}
+
+
+@media only screen and (min-width: 992px) {
 nav a {
     font-family: 'Special Elite', cursive;
     font-size: 1.9rem;
@@ -185,7 +206,7 @@ nav li {
   }
 
 .img-player {
-  width: 50%;
+  width: 100%;
   padding: 7px;
   border-radius: 10px;
 }
@@ -206,7 +227,7 @@ nav li {
   }
 
 .img-player {
-  width: 50%;
+  width: 100%;
   padding: 7px;
   border-radius: 10px;
 }

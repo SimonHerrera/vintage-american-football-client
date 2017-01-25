@@ -6,8 +6,9 @@ angular.module('vafApp')
     $anchorScroll.yOffset=200
 
     const teams = this;
-    teams.welcome = 'Welcome Vintage Teams';
+    teams.welcome = 'Vintage Football Teams';
     teams.intialView = true;
+    teams.intialFiller = true;
     teams.individualTeamView = false;
     // part of view but do I need seperate managerView here because it's part of the teamView?
 
@@ -20,6 +21,7 @@ angular.module('vafApp')
     //when selected run and do this
     teams.selectTeam = team => {
       teams.intialView = false;
+      teams.intialFiller = false;
       teams.individualTeamView = true;
       teams.team = team;
       // teams.team.player = player;
