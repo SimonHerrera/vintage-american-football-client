@@ -27,7 +27,7 @@
     <div ng-show="teams.individualTeamView" class="col-lg-8 col-md-8 col-sm-8">
       <section class="row">
         <div class="col-md-7"><!-- <h3>Team</h3> -->
-          <h4> {{ teams.team.cityName }}  {{ teams.team.teamName }} {{ teams.team.year }}
+          <h4> {{ teams.team.cityName }}  {{ teams.team.teamName }} - {{ teams.team.year }}
           </h4>
           <img ng-src="{{ teams.team.image }}" class="img-team" alt="Team image">
           <!-- <div ng-show="teams.managerView"> -->
@@ -38,6 +38,9 @@
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>Date Established: {{ teams.team.franchiseId.vafEstablished }}</td>
+              </tr>
               <tr>
                 <td>Manager: {{ teams.team.managerId.firstName }} {{ teams.team.managerId.lastName }}</td>
               </tr>
