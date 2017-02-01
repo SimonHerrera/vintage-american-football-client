@@ -16,7 +16,7 @@ body {
 
 .player-scroll {
   /*display: block;*/
-  width: 100%;
+  width: 60%;
   height: 100px;
   overflow: auto;
 }
