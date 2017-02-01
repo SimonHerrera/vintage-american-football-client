@@ -3,33 +3,32 @@
     <h2 class="col-xs-12 text-center mobile-heading">{{ players.welcome }}</h2>
 
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> <!-- ng-show? -->
-  <!-- sample start -->
- <!--  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <form class="navbar-form navbar-center">
-              <div class="form-group">Search Players:
-                <input type="text" class="form-control" placeholder="Search" ng-model="userSearch">
-              </div>
-            </form>
-              <div class="player-scroll"> -->
-    <!-- sample end - works but when select freezes player scroll view -->
-
-    <div>
+  <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> -->
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <form class="navbar-form navbar-center">
+      <div class="form-group">Search Players:
+        <input type="text" class="form-control" placeholder="Search" ng-model="userSearch">
+      </div>
+    </form>
+    <button id="clear-filter" ng-click="clearFilter()" type="button">Clear Search</button>
+      <h5>Players: </h5>
+      <div class="player-scroll">
+    <!-- <div> -->
         <!-- <table class="table table-striped table-hover table-condensed"> -->
 
         <table>
           <thead>
             <tr>
-              <th>Player Name</th>
+              <!-- <th>Player Name</th> -->
             </tr>
           </thead>
           <tbody>
-            <form class="navbar-form navbar-center">
+<!--             <form class="navbar-form navbar-center">
               <div class="form-group">Search Players:
                 <input type="text" class="form-control" placeholder="Search" ng-model="userSearch">
-                <button ng-click="userSearch = null">Clear Search</button>
               </div>
             </form>
+              <button id="clear-filter" ng-click="clearFilter()" type="button">Clear Search</button> -->
             <tr ng-repeat="player in players.vafPlayers | orderBy: 'lastName' | filter: userSearch">
               <td><a href ="" ng-click="players.selectPlayer(player)" >{{ player.firstName }}  {{ player.lastName }}</a></td>
             </tr>
@@ -40,7 +39,7 @@
 
 
     <!-- Player Bio Section -->
-    <div ng-show="players.individualPlayerView" class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+    <div ng-show="players.individualPlayerView" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
       <section class="row">
         <div class="col-md-7"><!-- <h3>Player Info</h3> -->
           <h4 id="jump"> {{ players.player.firstName }} {{ players.player.lastName }} <!-- {{players.team.cityName}} -->
@@ -54,12 +53,6 @@
           <img ng-src="{{ players.player.image1 }}" class="img-player" width="200" alt="Player image">
           <p id="scroll-bottom">{{ players.player.image1Info }}</p>
         </div>
-<!--         <div ng-show="players.individualPlayerView" class="row">
-          <div class="col-sm-12">
-            <p>Email: {{ players.player.email }}</p>
-            <p>Phone: {{ players.player.phone }}</p>
-          </div>
-        </div> -->
       </section>
     </div>
   </section>
