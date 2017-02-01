@@ -10,10 +10,12 @@ angular.module('vafApp')
     players.intialView = true;
     players.individualPlayerView = false
 
+
     $http.get (apiUrl+'/players/').then(res => {
       console.log("res", res);
       players.vafPlayers = res.data
     })
+
 
     //when run do this
     players.selectPlayer = player => {
