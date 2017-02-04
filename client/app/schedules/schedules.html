@@ -14,7 +14,8 @@
           <tbody>
             <tr ng-repeat="schedule in schedules.vafSchedules | orderBy: 'date' | filter: userSearch">
               <!-- <td><a href ="" ng-click="schedules.selectSchedule(schedule)">{{ schedule.visitorTeam }} vs {{ schedule.homeTeam }}</a></td> -->
-              <td><a href ="" ng-click="schedules.selectSchedule(schedule)">{{ schedule.visitorTeam.cityName }} {{ schedule.visitorTeam.teamName }} vs {{ schedule.homeTeam.cityName }} {{ schedule.homeTeam.teamName }} - {{ schedule.date }} </a></td>
+              <td><a href ="" ng-click="schedules.selectSchedule(schedule)">{{ schedule.date }} - {{ schedule.visitorTeam.cityName }} <!-- {{ schedule.visitorTeam.teamName }} --> vs {{ schedule.homeTeam.cityName }} <!-- {{ schedule.homeTeam.teamName }} -->
+              </a></td>
             </tr>
           </tbody>
         </table>
