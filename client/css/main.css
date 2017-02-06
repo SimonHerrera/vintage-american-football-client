@@ -14,6 +14,11 @@ body {
   min-width: 350px;
 }
 
+.center {
+  display: block;
+  margin-left: 140px;
+}
+
 .player-scroll {
   /*display: block;*/
   width: 60%;
