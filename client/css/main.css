@@ -43,6 +43,11 @@ body {
   border-radius: 10px;
 }
 
+.icon-scale {
+  width: 18%;
+  padding: 7px;
+}
+
 .img-schedule {
   width: 90%;
   padding: 7px;
