@@ -27,7 +27,7 @@
     <!-- <div ng-show="schedules.individualScheduleView" class="col-lg-8 col-md-8 col-sm-8"> -->
     <div ng-show="schedules.individualScheduleView" class="col-lg-7 col-md-7 col-sm-7">
       <section class="row">
-        <div class="col-md-7">
+        <div class="col-md-5">
           <h5>Date: {{ schedules.schedule.date }}</h5>
           <h4>
            <!-- {{schedules.team.cityName}} -->
@@ -35,6 +35,10 @@
           </h4>
           <h5>Location: {{ schedules.schedule.locationId.city }}, {{ schedules.schedule.locationId.state }} - {{ schedules.schedule.locationId.venueName }}</h5>
 
+          <img class="img-schedule" ng-src="{{ schedules.schedule.image1 }}" class="img-schedule" alt="Schedule image">
+          <p>{{ schedules.schedule.image1Info }}</p>
+        </div>
+        <div class="col-md-7">
           <table class="table table-bordered table-size">
               <thead>
                 <tr>
@@ -70,10 +74,6 @@
             <p>{{ schedules.schedule.gameSummary2}}</p>
     <!--       <p>Email: {{ schedules.schedule.visitorTeam }}</p>
           <p>Phone: {{ schedules.schedule.homeTeam }}</p> -->
-        </div>
-        <div class="col-md-5">
-          <img class="img-schedule" ng-src="{{ schedules.schedule.image1 }}" class="img-schedule" alt="Schedule image">
-          <p>{{ schedules.schedule.image1Info }}</p>
         </div>
 <!--         <div ng-show="schedules.individualScheduleView" class="row">
           <div class="col-sm-12">
