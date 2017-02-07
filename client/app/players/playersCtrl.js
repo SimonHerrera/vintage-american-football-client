@@ -11,7 +11,7 @@ angular.module('vafApp')
 
     const players = this
     players.welcome = 'Vintage Football Players'
-    players.intialView = true;
+    players.initialView = true;
     players.individualPlayerView = false
 
     // players.clearFilter = function() {
@@ -27,7 +27,7 @@ angular.module('vafApp')
 
     //when run do this
     players.selectPlayer = player => {
-      players.intialView = false;
+      players.initialView = false;
       players.individualPlayerView = true;
       players.player = player
       $anchorScroll('scroll-bottom')

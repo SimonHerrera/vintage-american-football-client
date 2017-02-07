@@ -37,44 +37,56 @@ body {
   padding-left: 5%;
 }
 
+img {
+  -webkit-box-shadow: 10px 9px 28px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 9px 28px -2px rgba(0,0,0,0.75);
+  box-shadow: 10px 9px 28px -2px rgba(0,0,0,0.75);
+  border-radius: 5px;
+}
+
 .img-scale {
   width: 100%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
 .icon-scale {
   width: 18%;
-  padding: 7px;
+  margin: 7px;
 }
 
 .img-schedule {
   width: 90%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
 .img-player {
   width: 50%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
 .img-jersey {
   width: 30%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
 .img-team {
   width: 80%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
 ul {
   padding: 0;
   margin: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1.3rem;
 }
 /*For Player Scrolliing - Add Later*/
 /*table {
@@ -145,6 +157,14 @@ nav a:hover {
   margin-bottom: 0px;
 }
 
+/*place image info at bottom of divs*/
+.pic-info {
+  vertical-align: bottom;
+  font-size: 1em;
+  display: block;
+}
+
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
 
@@ -186,7 +206,7 @@ nav a:hover {
 
 .img-player {
   width: 65%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
@@ -194,11 +214,10 @@ nav a:hover {
   width: 95%;
 }
 
-
 }
 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 767px) {
 nav a {
   font-family: 'Special Elite', cursive;
   font-size: 1.7rem;
@@ -211,9 +230,13 @@ nav li {
   padding-right: 10px;
 }
 
+#uniform {
+  width: 100%;
+}
+
 .img-player {
   width: 50%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
@@ -243,7 +266,7 @@ nav li {
 
 .img-player {
   width: 100%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
@@ -256,7 +279,7 @@ nav li {
 @media only screen and (min-width: 1150px) {
 nav a {
     font-family: 'Special Elite', cursive;
-    font-size: 2.1rem; /*compensate for bootstrap*/
+    font-size: 2.1rem;
     color: white;
     letter-spacing: 1.7px;
     transition:all 0.5s;
@@ -268,11 +291,9 @@ nav li {
 
 .img-player {
   width: 100%;
-  padding: 7px;
+  margin: 0 15px 17px 0;
   border-radius: 10px;
 }
-
-
 
 }
 
