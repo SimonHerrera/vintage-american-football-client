@@ -30,6 +30,7 @@ body {
 
 .mobile-heading {
   font-size: 2.3rem;
+  margin-top: 3%;
 }
 
 .text-center {
@@ -43,6 +44,13 @@ img {
   box-shadow: 10px 9px 28px -2px rgba(0,0,0,0.75);
   border-radius: 5px;
 }
+hr.style1 {
+  width: 80%;
+  margin-bottom: 1%;
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8C8B8B inset;
+}
 
 .img-scale {
   width: 100%;
@@ -51,8 +59,15 @@ img {
 }
 
 .icon-scale {
-  width: 18%;
-  margin: 7px;
+  width: 9%;
+  max-width: 100px;
+  margin: 2% 0% 2% 12%;
+  /*margin-top: 2%;*/
+  /*margin-left: 12%;*/
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  -moz-box-shadow: 0 0 0 0  rgba(0,0,0,0);
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  border-radius: 5px;
 }
 
 .img-schedule {
@@ -109,7 +124,7 @@ header {
 
 nav a {
   font-family: 'Special Elite', cursive;
-  /*font-size: 1rem;*/  use this line if remove bootstrap
+  /*font-size: 1rem;*/
   font-size: 1.3rem; /*compensate for bootstrap*/
   color: white;
   letter-spacing: 1.6px;
