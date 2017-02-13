@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('vafApp', ['ngRoute'])
-  // .constant('apiUrl', "http://localhost:8000")
-  .constant('apiUrl', "http://104.236.6.142:8001") // something similar for server
+  .constant('apiUrl', "http://localhost:8000")
+  // .constant('apiUrl', "http://104.236.6.142:8001") // something similar for server
 
   .config($httpProvider => {
     $httpProvider.defaults.xsrfCookieName = 'csrftoken'; // adds header
@@ -36,6 +36,7 @@ htmlLinks.innerHTML =
   "</div>" +
   "</nav>";
 
+// Code found that will ensure that the nav menu collapses
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
         $(this).collapse('hide');
