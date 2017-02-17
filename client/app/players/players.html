@@ -3,7 +3,6 @@
     <h2 class="col-xs-12 text-center mobile-heading">{{ players.welcome }}</h2>
   <hr class="style1">
 
-  <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5"> -->
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <form class="navbar-form navbar-center">
       <div class="form-group">Search Players:
@@ -11,29 +10,15 @@
       </div>
     </form>
     <button id="clear-filter" ng-click="clearFilter()" type="button">Clear Search</button>
-      <h5>Players: (scroll through list below)</h5>
-      <div class="player-scroll">
-    <!-- <div> -->
-        <!-- <table class="table table-striped table-hover table-condensed"> -->
-
-        <table>
-          <thead>
-            <tr>
-              <!-- <th>Player Name</th> -->
-            </tr>
-          </thead>
-          <tbody>
-<!--             <form class="navbar-form navbar-center">
-              <div class="form-group">Search Players:
-                <input type="text" class="form-control" placeholder="Search" ng-model="userSearch">
-              </div>
-            </form>
-              <button id="clear-filter" ng-click="clearFilter()" type="button">Clear Search</button> -->
-            <tr ng-repeat="player in players.vafPlayers | orderBy: 'lastName' | filter: userSearch">
-              <td><a href ="" ng-click="players.selectPlayer(player)" >{{ player.firstName }}  {{ player.lastName }}</a></td>
-            </tr>
-          </tbody>
-        </table>
+    <h5>Players: (scroll through list below)</h5>
+    <div class="player-scroll">
+      <table>
+        <tbody>
+          <tr ng-repeat="player in players.vafPlayers | orderBy: 'lastName' | filter: userSearch">
+            <td><a href ="" ng-click="players.selectPlayer(player)" >{{ player.firstName }}  {{ player.lastName }}</a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -59,7 +44,7 @@
     <div ng-show="players.individualPlayerView" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
       <section class="row">
         <div class="col-md-5"><!-- <h3>Player Info</h3> -->
-          <h4 id="jump"> {{ players.player.firstName }} {{ players.player.lastName }} <!-- {{players.team.cityName}} -->
+          <h4 id="jump"> {{ players.player.firstName }} {{ players.player.lastName }}  <!-- {{players.team.cityName}} -->
           <!-- want to pull in via relationship the team of this_player without it pulling in all teams and searching - is this possible yearView.game.locationId.city -->
           </h4>
           <img ng-src="{{ players.player.image1 }}" class="img-player" alt="Player image">

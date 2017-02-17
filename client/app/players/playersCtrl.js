@@ -14,18 +14,13 @@ angular.module('vafApp')
     players.initialView = true;
     players.individualPlayerView = false
 
-    // players.clearFilter = function() {
-    //   players.userSearch = ""
-    // }
-
+    // Get Players into controller
     $http.get (apiUrl+'/players/').then(res => {
       console.log("res", res);
       players.vafPlayers = res.data
     })
 
-
-
-    //when run do this
+    //When event happens - run these
     players.selectPlayer = player => {
       players.initialView = false;
       players.individualPlayerView = true;

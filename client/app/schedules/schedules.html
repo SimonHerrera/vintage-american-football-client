@@ -5,7 +5,6 @@
   <!-- <div class="col-lg-4 col-md-4 col-sm-4"> ng-show? -->
   <div class="col-lg-4 col-md-4 col-sm-5">
     <div>
-        <!-- <table class="table table-striped table-hover table-condensed"> -->
         <table>
           <thead>
             <tr>
@@ -14,7 +13,6 @@
           </thead>
           <tbody>
             <tr ng-repeat="schedule in schedules.vafSchedules | orderBy: 'date' | filter: userSearch">
-              <!-- <td><a href ="" ng-click="schedules.selectSchedule(schedule)">{{ schedule.visitorTeam }} vs {{ schedule.homeTeam }}</a></td> -->
               <td><a href ="" ng-click="schedules.selectSchedule(schedule)">{{ schedule.date }} - {{ schedule.visitorTeam.cityName }} <!-- {{ schedule.visitorTeam.teamName }} --> vs {{ schedule.homeTeam.cityName }} <!-- {{ schedule.homeTeam.teamName }} -->
               </a></td>
             </tr>
@@ -23,9 +21,28 @@
     </div>
   </div>
 
+  <!-- content view with info about schedules - hide when a player is selected -->
+  <div ng-show="schedules.initialView" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+    <div class="col-lg-7 col-md-7 col-sm-8 col-xs-12"><br>
+      <img src="../images/pole_ref_2015.png" alt="Linesman operating down pole at 2015 VAF game" class="img-player">
+      <i class="pic-info">2015 Vintage Linesman holding down pole</i>
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+      <h4>V.A.F Game Facts</h4>
+      <ul>
+        <li>Team managers meet for coin flip</li>
+        <li>Four quarters with 15 minute running clock </li>
+        <li>3 Interior linesmen, 2 ends, 4 backs</li>
+        <li>First downs located at 20-40-20 yard lines</li>
+        <li>Drop Kicks are 1 extra point vs place kicks </li>
+        <li>A throw into the end zone is a touchback</li>
+        <li>The backfield can shift just prior to snap</li>
+      </ul>
+    </div>
+  </div>
+
 
     <!-- Schedule Bio Section -->
-    <!-- <div ng-show="schedules.individualScheduleView" class="col-lg-8 col-md-8 col-sm-8"> -->
     <div ng-show="schedules.individualScheduleView" class="col-lg-8 col-md-8 col-sm-7">
       <section class="row">
         <div class="col-md-7">
@@ -73,15 +90,7 @@
             </table>
             <p>{{ schedules.schedule.gameSummary }}</p>
             <p>{{ schedules.schedule.gameSummary2}}</p>
-    <!--       <p>Email: {{ schedules.schedule.visitorTeam }}</p>
-          <p>Phone: {{ schedules.schedule.homeTeam }}</p> -->
         </div>
-<!--         <div ng-show="schedules.individualScheduleView" class="row">
-          <div class="col-sm-12">
-            <p>Email: {{ schedules.schedule.email }}</p>
-            <p>Phone: {{ schedules.schedule.phone }}</p>
-          </div>
-        </div> -->
       </section>
     </div>
   </section>
