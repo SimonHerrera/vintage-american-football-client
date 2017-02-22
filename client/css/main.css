@@ -82,14 +82,20 @@ hr.style1 {
   border-radius: 10px;
 }
 
+.img-team-initial {
+  width: 65%;
+  margin: 0 15px 17px 0;
+  border-radius: 10px;
+}
+
 .img-jersey {
-  width: 30%;
+  width: 20%;
   margin: 0 15px 17px 0;
   border-radius: 10px;
 }
 
 .img-team {
-  width: 80%;
+  width: 70%;
   margin: 0 15px 17px 0;
   border-radius: 10px;
 }
@@ -253,7 +259,7 @@ nav li {
 
 
 #uniform {
-  width: 100%;
+  width: 70%;
 }
 
 .img-player {
@@ -287,7 +293,7 @@ nav li {
   }
 
 .img-player {
-  width: 100%;
+  width: 85%;
   margin: 0 15px 17px 0;
   border-radius: 10px;
 }
@@ -312,7 +318,7 @@ nav li {
   }
 
 .img-player {
-  width: 100%;
+  width: 85%;
   margin: 0 15px 17px 0;
   border-radius: 10px;
 }
