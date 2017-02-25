@@ -199,33 +199,6 @@ nav a:hover {
 /* Media Queries */
 @media only screen and (max-width: 600px) {
 
-/*nav a {
-  font-family: 'Special Elite', cursive;
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: black;
-  letter-spacing: 1.6px;
-  transition:all 0.5s;
-}*/
-
-/*delete*/
-/*nav a:visited {
-  color: white;
-}
-*/
-/*delete end*/
-
-/*nav li {
-  display: block;
-}
-*/
-
-/*nav ul {
-  line-height: 25px;
-}
-*/
-
-
 nav a:hover {
   color: white;
   background: black;
