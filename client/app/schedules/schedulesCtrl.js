@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('vafApp')
-  .controller('SchedulesCtrl', function(apiUrl, $http, $routeParams, $anchorScroll) {
+  .controller('SchedulesCtrl', function($scope, apiUrl, $http, $routeParams, $anchorScroll) {
 
     $anchorScroll.yOffset=500
 
-    // $scope.clearFilter = function() {
-    //   $scope.scheduleSearch = ""
-    // }
+    $scope.clearFilter = function() {
+      $scope.scheduleSearch = ""
+    }
 
     const schedules = this
     schedules.welcome = 'Vintage Football Schedule'
