@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('vafApp')
-  .controller('TeamsCtrl', function(apiUrl, $http, $routeParams, $anchorScroll) {
+  .controller('TeamsCtrl', function($scope, apiUrl, $http, $routeParams, $anchorScroll) {
 
     $anchorScroll.yOffset=500
 
-    // $scope.clearFilter = function() {
-    //   $scope.teamSearch = ""
-    // }
+    $scope.clearFilter = function() {
+      $scope.teamSearch = ""
+    }
 
     const teams = this;
     teams.welcome = 'Vintage Football Teams';

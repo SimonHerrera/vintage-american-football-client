@@ -2,23 +2,26 @@
   <section class=row>
     <h2 class="col-xs-12 text-center mobile-heading">{{ teams.welcome }}</h2>
   <hr class="style1">
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> <!-- ng-show? -->
-    <div>
-        <!-- <table class="table table-striped table-hover table-condensed"> -->
-        <table>
-          <thead>
-            <tr>
-              <th>Team Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="team in teams.allTeams | orderBy: ['year', 'cityName'] | filter: userSearch">
-              <td><a href ="" ng-click="teams.selectTeam(team)">{{ team.cityName }}  {{ team.teamName }} {{ team.year }} </a></td>
-            </tr>
-          </tbody>
-        </table>
+
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <form class="navbar-form navbar-center">
+      <div class="form-group">Team Search:
+        <input type="text" class="form-control" placeholder="Search" ng-model="teamSearch">
+      </div>
+    </form>
+    <button id="clear-filter" ng-click="clearFilter()" type="button">Clear Search</button>
+    <h5>Teams: (scroll through list below)</h5>
+    <div class="team-scroll">
+      <table>
+        <tbody>
+          <tr ng-repeat="team in teams.allTeams | orderBy: ['year', 'cityName'] | filter: teamSearch">
+            <td><a href ="" ng-click="teams.selectTeam(team)" >{{ team.cityName }}  {{ team.teamName }} {{ team.year }} </a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+
   <!-- why is this not working when initialFiller is added -->
   <div ng-show="teams.initialView" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
     <div class="col-lg-6 col-md-5 col-sm-4 col-xs-12"><br>
@@ -42,7 +45,7 @@
 
 
     <!-- Player Bio Section -->
-    <div ng-show="teams.individualTeamView" class="col-lg-8 col-md-8 col-sm-8">
+    <div ng-show="teams.individualTeamView" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
       <section class="row">
         <div class="col-lg-7"><!-- <h3>Team</h3> -->
           <h4> {{ teams.team.cityName }}  {{ teams.team.teamName }} - {{ teams.team.year }}

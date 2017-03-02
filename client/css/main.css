@@ -28,6 +28,13 @@ body {
   overflow: auto;
 }
 
+.team-scroll {
+  /*display: block;*/
+  width: 85%;
+  height: 100px;
+  overflow: auto;
+}
+
 .mobile-heading {
   font-size: 2.3rem;
   margin-top: 3%;
@@ -255,6 +262,9 @@ nav li {
   height: 100%;
 }
 
+.team-scroll {
+  height: 100%;
+}
 
 
 }
@@ -280,6 +290,10 @@ nav li {
 }
 
 .player-scroll {
+  height: 100%;
+}
+
+.team-scroll {
   height: 100%;
 }
 
