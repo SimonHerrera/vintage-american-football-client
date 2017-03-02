@@ -5,6 +5,10 @@ angular.module('vafApp')
 
     $anchorScroll.yOffset=500
 
+    // $scope.clearFilter = function() {
+    //   $scope.teamSearch = ""
+    // }
+
     const teams = this;
     teams.welcome = 'Vintage Football Teams';
     teams.initialView = true;

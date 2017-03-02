@@ -6,7 +6,7 @@ angular.module('vafApp')
     $anchorScroll.yOffset=500
 
     $scope.clearFilter = function() {
-      $scope.userSearch = ""
+      $scope.playerSearch = ""
     }
 
     const players = this

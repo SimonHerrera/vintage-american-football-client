@@ -6,7 +6,7 @@
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <form class="navbar-form navbar-center">
       <div class="form-group">Search Players:
-        <input type="text" class="form-control" placeholder="Search" ng-model="userSearch">
+        <input type="text" class="form-control" placeholder="Search" ng-model="playerSearch">
       </div>
     </form>
     <button id="clear-filter" ng-click="clearFilter()" type="button">Clear Search</button>
@@ -14,7 +14,7 @@
     <div class="player-scroll">
       <table>
         <tbody>
-          <tr ng-repeat="player in players.vafPlayers | orderBy: 'lastName' | filter: userSearch">
+          <tr ng-repeat="player in players.vafPlayers | orderBy: 'lastName' | filter: playerSearch">
             <td><a href ="" ng-click="players.selectPlayer(player)" >{{ player.firstName }}  {{ player.lastName }}</a></td>
           </tr>
         </tbody>

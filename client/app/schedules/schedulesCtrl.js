@@ -5,6 +5,10 @@ angular.module('vafApp')
 
     $anchorScroll.yOffset=500
 
+    // $scope.clearFilter = function() {
+    //   $scope.scheduleSearch = ""
+    // }
+
     const schedules = this
     schedules.welcome = 'Vintage Football Schedule'
     schedules.initialView = true;
