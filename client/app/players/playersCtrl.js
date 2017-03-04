@@ -20,7 +20,6 @@ angular.module('vafApp')
       players.vafPlayers = res.data
     })
 
-    //When event happens - run these
     players.selectPlayer = player => {
       players.initialView = false;
       players.individualPlayerView = true;
