@@ -15,7 +15,7 @@
       <table>
         <tbody>
           <tr ng-repeat="team in teams.allTeams | orderBy: ['year', 'cityName'] | filter: teamSearch">
-            <td><a href ="" ng-click="teams.selectTeam(team)" >{{ team.cityName }}  {{ team.teamName }} {{ team.year }} </a></td>
+            <td><a href ="" ng-click="teams.selectTeam(team)" >{{team.cityName}}  {{team.teamName}} {{team.year}} </a></td>
           </tr>
         </tbody>
       </table>
@@ -48,7 +48,7 @@
     <div ng-show="teams.individualTeamView" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
       <section class="row">
         <div class="col-lg-7"><!-- <h3>Team</h3> -->
-          <h4> {{ teams.team.cityName }}  {{ teams.team.teamName }} - {{ teams.team.year }}
+          <h4> {{teams.team.cityName}}  {{teams.team.teamName}} - {{teams.team.year}}
           </h4>
           <img ng-src="{{ teams.team.image }}" class="img-team" alt="Team image">
           <!-- <div ng-show="teams.managerView"> -->
@@ -60,25 +60,25 @@
             </thead>
             <tbody>
               <tr>
-                <td>Franchise Established: {{ teams.team.franchiseId.vafEstablished }}</td>
+                <td>Franchise Established: {{teams.team.franchiseId.vafEstablished}}</td>
               </tr>
               <tr>
-                <td>Manager: {{ teams.team.managerId.firstName }} {{ teams.team.managerId.lastName }}</td>
+                <td>Manager: {{teams.team.managerId.firstName}} {{teams.team.managerId.lastName}}</td>
               </tr>
               <tr>
-                <td>Primary Color: {{ teams.team.primaryColor }}</td>
+                <td>Primary Color: {{teams.team.primaryColor}}</td>
               </tr>
               <tr>
-                <td>Secondary Color: {{ teams.team.secondaryColor }}</td>
+                <td>Secondary Color: {{teams.team.secondaryColor}}</td>
               </tr>
             </tbody>
           </table>
-          <h4>About the {{ teams.team.franchiseId.FranTeamName }}:</h4>
-          <p>{{ teams.team.franchiseId.aboutVafTeam1}}</p>
-          <p>{{ teams.team.franchiseId.aboutVafTeam2}}</p>
+          <h4>About the {{teams.team.franchiseId.FranTeamName}}:</h4>
+          <p>{{teams.team.franchiseId.aboutVafTeam1}}</p>
+          <p>{{teams.team.franchiseId.aboutVafTeam2}}</p>
           <h4>The inspireation behind the franchise:</h4>
-          <p>{{ teams.team.franchiseId.aboutOrgTeam1}}</p>
-          <p>{{ teams.team.franchiseId.aboutOrgTeam2}}</p>
+          <p>{{teams.team.franchiseId.aboutOrgTeam1}}</p>
+          <p>{{teams.team.franchiseId.aboutOrgTeam2}}</p>
         </div>
 
         <div class="col-lg-5">

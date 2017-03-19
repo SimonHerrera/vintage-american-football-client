@@ -33,7 +33,7 @@
       <table>
         <tbody>
           <tr ng-repeat="schedule in schedules.vafSchedules | orderBy: 'date' | filter: scheduleSearch">
-            <td><a href ="" ng-click="schedules.selectSchedule(schedule)" >{{ schedule.date }} - {{ schedule.visitorTeam.cityName }} <!-- {{ schedule.visitorTeam.teamName }} --> vs {{ schedule.homeTeam.cityName }} <!-- {{ schedule.homeTeam.teamName }} --> </a></td>
+            <td><a href ="" ng-click="schedules.selectSchedule(schedule)" >{{schedule.date}} - {{schedule.visitorTeam.cityName}} <!-- {{ schedule.visitorTeam.teamName }} --> vs {{schedule.homeTeam.cityName}} <!-- {{ schedule.homeTeam.teamName }} --> </a></td>
           </tr>
         </tbody>
       </table>
@@ -68,15 +68,15 @@
     <div ng-show="schedules.individualScheduleView" class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
       <section class="row">
         <div class="col-md-7">
-          <h5>Date: {{ schedules.schedule.date }}</h5>
+          <h5>Date: {{schedules.schedule.date}}</h5>
           <h4>
            <!-- {{schedules.team.cityName}} -->
           <!-- want to pull in via relationship the team of this_player without it pulling in all teams and searching - is this possible yearView.game.locationId.city -->
           </h4>
-          <h5>Location: {{ schedules.schedule.locationId.city }}, {{ schedules.schedule.locationId.state }} - {{ schedules.schedule.locationId.venueName }}</h5>
+          <h5>Location: {{schedules.schedule.locationId.city}}, {{schedules.schedule.locationId.state}} - {{schedules.schedule.locationId.venueName}}</h5>
 
           <img class="img-schedule" ng-src="{{ schedules.schedule.image1 }}" class="img-schedule" alt="Schedule image">
-          <p>{{ schedules.schedule.image1Info }}</p>
+          <p>{{schedules.schedule.image1Info}}</p>
         </div>
         <div class="col-md-5">
           <table class="table table-bordered table-size">
@@ -92,26 +92,26 @@
               </thead>
               <tbody>
                 <tr>
-                  <th>{{ schedules.schedule.visitorTeam.teamName }}</th>
-                  <td>{{ schedules.schedule.visitor1st }}</td>
-                  <td>{{ schedules.schedule.visitor2nd }}</td>
-                  <td>{{ schedules.schedule.visitor3rd }}</td>
-                  <td>{{ schedules.schedule.visitor4th }}</td>
-                  <th>{{ schedules.schedule.visitorScore }}</th>
+                  <th>{{schedules.schedule.visitorTeam.teamName}}</th>
+                  <td>{{schedules.schedule.visitor1st}}</td>
+                  <td>{{schedules.schedule.visitor2nd}}</td>
+                  <td>{{schedules.schedule.visitor3rd}}</td>
+                  <td>{{schedules.schedule.visitor4th}}</td>
+                  <th>{{schedules.schedule.visitorScore}}</th>
 
                 </tr>
                 <tr>
-                  <th>{{ schedules.schedule.homeTeam.teamName }}</th>
-                  <td>{{ schedules.schedule.home1st }}</td>
-                  <td>{{ schedules.schedule.home2nd }}</td>
-                  <td>{{ schedules.schedule.home3rd }}</td>
-                  <td>{{ schedules.schedule.home4th }}</td>
-                  <th>{{ schedules.schedule.homeScore }}</th>
+                  <th>{{schedules.schedule.homeTeam.teamName}}</th>
+                  <td>{{schedules.schedule.home1st}}</td>
+                  <td>{{schedules.schedule.home2nd}}</td>
+                  <td>{{schedules.schedule.home3rd}}</td>
+                  <td>{{schedules.schedule.home4th}}</td>
+                  <th>{{schedules.schedule.homeScore}}</th>
                 </tr>
               </tbody>
             </table>
-            <p>{{ schedules.schedule.gameSummary }}</p>
-            <p>{{ schedules.schedule.gameSummary2}}</p>
+            <p>{{schedules.schedule.gameSummary}}</p>
+            <p>{{schedules.schedule.gameSummary2}}</p>
         </div>
       </section>
     </div>

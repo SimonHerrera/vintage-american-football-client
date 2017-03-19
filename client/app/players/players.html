@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <section class=row>
-    <h2 class="col-xs-12 text-center mobile-heading">{{ players.welcome }}</h2>
+    <h2 class="col-xs-12 text-center mobile-heading">{{players.welcome}}</h2>
   <hr class="style1">
 
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -15,7 +15,7 @@
       <table>
         <tbody>
           <tr ng-repeat="player in players.vafPlayers | orderBy: 'lastName' | filter: playerSearch">
-            <td><a href ="" ng-click="players.selectPlayer(player)" >{{ player.firstName }}  {{ player.lastName }}</a></td>
+            <td><a href ="" ng-click="players.selectPlayer(player)" >{{player.firstName}}  {{player.lastName}}</a></td>
           </tr>
         </tbody>
       </table>
