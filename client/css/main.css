@@ -116,6 +116,11 @@ li {
   list-style-type: none;
   font-size: 1.3rem;
 }
+
+/*.card-text {
+  color: red;
+  padding: 2px 16px;
+}*/
 /*For Player Scrolliing - Add Later*/
 /*table {
   margin: auto;
