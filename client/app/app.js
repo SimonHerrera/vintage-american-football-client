@@ -42,6 +42,8 @@ $(document).on('click','.navbar-collapse.in',function(e) {
         $(this).collapse('hide');
     }
 });
+
+
 // var htmlLinks = document.getElementById('nav-links');
 // htmlLinks.innerHTML =
 //   '<nav class="navbar navbar-inverse navbar-fixed-top">' +
