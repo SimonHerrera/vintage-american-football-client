@@ -5,9 +5,9 @@ angular.module('vafApp')
   function($routeProvider) {
 
     $routeProvider
-      .when('/', {
-        templateUrl: 'app/landing/landing.html'
-      })
+      // .when('/', {
+      //   templateUrl: 'app/landing/landing.html'
+      // })
       .when('/players', {
         controller: 'PlayersCtrl',
         controllerAs: 'players',
